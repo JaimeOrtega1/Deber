@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="    https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        crossorigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+        <link rel="stylesheet"  type="text/css" href="css/estilo3.css">
+    <title>Hello, world!</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <form id="id-form-registro-titular-cuenta">
+            <div class="card shadow mt-2">
+                <div class="card-header p-3 h5">
+                    <i class="fa-solid fa-book-open"></i>
+                    Libros 
+                </div>
+                <div class="card-body">
+                    <div  class="centrar" style="width: 18rem;" >
+                        <div class="card-header"  >
+                          Caja
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">$1.000.000.</li>
+                        </ul>
+                      </div>
+                    <div class="row g-2">
+                        <div class="card-header"  >
+                            Agregar Libros
+                          </div>
+                        <div class="col-md-4">
+                            <label for="" class="form-label">ISBN</label>
+                            <input type="number" class="form-control" name="Nombre" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="" class="form-label">Titulo</label>
+                            <input type="text" class="form-control" name="cedula" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="" class="form-label">Precio de compra</label>
+                            <input type="number" class="form-control" name="carga_total" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="" class="form-label">Precio de venta</label>
+                            <input type="number" class="form-control" name="carga_total" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="" class="form-label">Cantidad actual</label>
+                            <input type="number" class="form-control" name="carga_total" required>
+                        </div>
+                        <div class="card-footer p-2 ">
+                            <button id="id-btn-agregar  ">
+                                <span>
+                                    <i class="fa-solid fa-circle-plus"></i>
+                                    Abastecer
+                                </span>
+                                
+                            </button>
+                            <button id="id-btn-agregar  ">
+                                <i class="fa-solid fa-circle-plus"></i>
+                                Vender
+                            </button>
+                            <button id="id-btn-agregar  ">
+                                <i class="fa-solid fa-circle-plus"></i>
+                                Eliminar
+                            </button>
+                            
+                        </div>
+
+                        <hr>
+
+                        <div class="col ml-" >
+                            <div class="card" style="width: 18rem ;" >
+                                <img src="imagenes/ilustracion-pila-libros-diseno-plano-dibujado-mano_23-2149341898.avif" alt="fotolibros">
+                                <div class="card-body" >
+                                    <h1>Libros</h1>
+                                    <p class="card-text" >
+                                        Aqui esta la lista de libros:
+                                    </p>
+                                    <button id="id-btn-agregar  ">
+                                        <i class="fa-solid fa-circle-plus"></i>
+                                        Registrar
+                                    </button>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col" >
+                            <div class="card" style="width: 18rem ;" >
+                                <img src="imagenes/ilustracion-pila-libros-diseno-plano-dibujado-mano_23-2149341898.avif" alt="fotolibros">
+                                <div class="card-body" >
+    
+                                    <hr>
+                                    <div class="card-header"  >
+                                        Libro Actual
+                                      </div>
+                                      <hr>
+                                      <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="flush-headingOne">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                              ISBN
+                                            </button>
+                                          </h2>
+                                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">.....</div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="flush-headingTwo">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                              Titulo
+                                            </button>
+                                          </h2>
+                                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">.....</div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="flush-headingThree">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                              Precio Compra
+                                            </button>
+                                          </h2>
+                                          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">.....</div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingFour">
+                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                                Precio Venta
+                                              </button>
+                                            </h2>
+                                            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">.....</div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingFive">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                                Unidades
+                                              </button>
+                                            </h2>
+                                            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">.....</div>
+                                            </div>
+                                        </div>
+                                      </div>
+                    
+                                      
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <hr>
+                        </div>
+
+
+
+    
+                        <p>
+  <a class="btn " data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Buscar por IBSN</a>
+  <button class="btn " type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Buscar por Titulo</button>
+  <button class="btn " type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Libro mas economico</button>
+  <button class="btn " type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample4" aria-expanded="false" aria-controls="multiCollapseExample2">Libro mas costoso</button>
+  
+</p>
+<div class="row">
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample1">
+      <div class="card card-body">
+        <div class="buscar">
+            <input type="text" placeholder="Buscar" required />
+      
+            <div class="btn" id="btn_buscar" >
+              <i class="fas fa-search icon"></i>
+            </div>
+          </div>
+      </div>
+      <hr>
+      <table class="table">
+        <thead>
+            <tr>
+                <th>Busqueda por IBSN</th>
+            </tr>
+          <tr>
+            <th scope="col">ISBN</th>
+            <th scope="col">Titulo</th>
+            <th scope="col">Precio de compra</th>
+            <th scope="col">Precio de venta</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="8" align="center">
+                    No se ha ingresado libros
+                </td>
+            </tr>
+        </tbody>
+      </table>
+      <hr>
+    
+    </div>
+    <div class="collapse multi-collapse" id="multiCollapseExample2">
+        <div class="card card-body">
+          <div class="buscar">
+              <input type="text" placeholder="Buscar" required />
+        
+              <div class="btn" id="btn_buscar" >
+                <i class="fas fa-search icon"></i>
+              </div>
+            </div>
+        </div>
+        <hr>
+        <table class="table">
+          <thead>
+              <tr>
+                  <th>Busqueda por Titulo</th>
+              </tr>
+              
+            <tr>
+              <th scope="col">ISBN</th>
+              <th scope="col">Titulo</th>
+              <th scope="col">Precio de compra</th>
+              <th scope="col">Precio de venta</th>
+            </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td colspan="8" align="center">
+                      No se ha ingresado libros
+                  </td>
+              </tr>
+          </tbody>
+        </table>
+      </div>
+  </div>
+  <div class="col">
+    
+    <div class="collapse multi-collapse" id="multiCollapseExample3">
+    
+        <table class="table">
+          <thead>
+            <tr>
+                <th>
+                    Libro mas Economico
+                </th>
+            </tr>
+            <tr>
+              <th scope="col">ISBN</th>
+              <th scope="col">Titulo</th>
+              <th scope="col">Precio de compra</th>
+              <th scope="col">Precio de venta</th>
+            </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td colspan="8" align="center">
+                      No se ha ingresado libros
+                  </td>
+              </tr>
+          </tbody>
+        </table>
+    </div>
+    <div class="collapse multi-collapse" id="multiCollapseExample4">
+    
+        <hr>
+        <table class="table">
+          <thead>
+            <tr>
+                <th>
+                    Libro mas Costoso
+                </th>
+            </tr>
+            <tr>
+              <th scope="col">ISBN</th>
+              <th scope="col">Titulo</th>
+              <th scope="col">Precio de compra</th>
+              <th scope="col">Precio de venta</th>
+            </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td colspan="8" align="center">
+                      No se ha ingresado libros
+                  </td>
+              </tr>
+          </tbody>
+        </table>
+    </div>
+  </div>
+</div>
+<hr>
+<table class="table">
+    <thead>
+      <tr align="center" >
+        <th scope="col">Transacciones de Libros</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td colspan="8" align="center">
+                No se ha ingresado libros
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+                        
+    
+                                   
+
+               
+               
+                
+            </div>
+        </form>
+        
+
+       
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <script src="./app.js" type="module">
+
+        /// codigo fuente
+
+    </script>
+
+</body>
+
+</html>

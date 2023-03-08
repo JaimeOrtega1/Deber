@@ -1,0 +1,18 @@
+.centrar{
+    align-self : center;
+    text-align: center;
+}
+
+
+table{
+    background-color: rgb(110, 218, 233);
+    
+}
+
+body{
+    background-color: black;
+}
+
+div{
+    font-family: 'Roboto Condensed', sans-serif;
+}
